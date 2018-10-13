@@ -1,5 +1,5 @@
 {% set name = "python-awips" %}
-{% set version = "18.1.2" %}
+{% set version = "18.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Unidata/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: ae331fe552a9e8e2179adbbdb98aea7f73a36fe729d69f67a077129f2571620f
+  sha256: db511c9320fcd3fa91b59c469379ae0dc560d655420826b4ec5cc908f80eb4ec
 
 build:
   noarch: python
