@@ -1,5 +1,5 @@
 {% set name = "python-awips" %}
-{% set version = "18.1.7" %}
+{% set version = "18.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -37,7 +37,7 @@ about:
   description: |
     python-awips provides a data access framework for requesting grid and 
     geometry datasets from an AWIPS EDEX data server.
-  doc_url: http://python-awips.readthedocs.io/
+  doc_url: http://unidata.github.io/python-awips/
   dev_url: https://github.com/Unidata/python-awips
 
 extra:
