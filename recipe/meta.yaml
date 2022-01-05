@@ -10,16 +10,16 @@ source:
   sha256: f0920207361fc157630b55faec30486d575d3a9adc528413b69c958cafe60fa1
 
 build:
-  noarch: python >=3.6
+  noarch: python
   number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - numpy
     - six
     - shapely
