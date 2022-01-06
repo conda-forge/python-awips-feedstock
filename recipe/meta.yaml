@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/Unidata/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 968c70133ae93e98d997834120e7943b280c83417982245ded39d91443fb4ec7 
+  sha256: 968c70133ae93e98d997834120e7943b280c83417982245ded39d91443fb4ec7
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
