@@ -1,5 +1,5 @@
 {% set name = "python-awips" %}
-{% set version = "18.1.9" %}
+{% set version = "18.1.10" %}
 
 package:
   name: {{ name|lower }}
