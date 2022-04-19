@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Unidata/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c2f26f069c64f37b11bd53d4b24f2e77d679e99be974ab60ab43ee68689f5720
+  sha256: 70b8be0c65fe444a7a59678b31eb1618772dc69674394350728663faa7d2242e
 
 build:
   noarch: python
