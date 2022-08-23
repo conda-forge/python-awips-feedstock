@@ -11,15 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3
+    - python >=3,<3.10
     - pip
   run:
-    - python >=3
+    - python >=3,<3.10
     - numpy
     - six
     - shapely
