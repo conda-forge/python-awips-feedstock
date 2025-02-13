@@ -1,5 +1,5 @@
 {% set name = "python-awips" %}
-{% set version = "20.1" %}
+{% set version = "23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,18 @@ package:
 
 source:
   url: https://github.com/Unidata/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: d301298e0e97dfc9e620f7a54011846be6a1b6e2a5a1a8f462bccb4c9f32d4c4
+  sha256: eaeaabb17a2f61f92b74114aafd124b62b65b49c39df81774fee9d348ec09186
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - numpy
@@ -46,4 +47,4 @@ extra:
   recipe-maintainers:
     - dopplershift
     - dcamron
-    - srcarter3
+    - tiffanycmeyer13
