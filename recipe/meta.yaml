@@ -1,13 +1,13 @@
 {% set name = "python-awips" %}
-{% set version = "23.1.1" %}
+{% set version = "23.4.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/Unidata/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 2d9d6e8dee575acff65f467189bc95c2727d56e1444769ef9ab91ace48f0b40c
+  url: https://github.com/Unidata/{{ name }}/archive/v{{ version }}-release.tar.gz
+  sha256: ec764c4d36437bde9b36906892887146fa81bcc33cbba01bc26030c7e22d9558
 
 build:
   noarch: python
